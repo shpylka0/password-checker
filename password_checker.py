@@ -48,7 +48,7 @@ def check_password_strength(password):
 
     return strength
 
-#Генерація рекомендацій для покращення пароля
+#Рекомендації для покращення пароля
 def generate_recommendations(results):
     """Генерує список рекомендацій для покращення пароля."""
     recommendations = []
@@ -78,7 +78,6 @@ def save_history(password, results):
         "results": results
     }
     try:
-        # Завантажити існуючу історію
         try:
             with open("password_checks.json", "r") as file:
                 history = json.load(file)
@@ -89,7 +88,7 @@ def save_history(password, results):
         history.append(history_entry)
         history = history[-100:]
 
-        # Записати оновлену історію
+        # Оновлена історія
         with open("password_checks.json", "w") as file:
             json.dump(history, file, indent=4)
     except Exception as e:
