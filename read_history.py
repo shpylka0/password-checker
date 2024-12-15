@@ -1,7 +1,6 @@
 import json
 
 def read_history(file_path="password_checks.json"):
-    # Зчитує і виводить історію перевірок паролів
     try:
         with open(file_path, "r") as file:
             history = json.load(file)
