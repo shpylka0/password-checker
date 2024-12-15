@@ -23,14 +23,14 @@
 
 
 1. Клонувати репозиторій:
- - git clone https://github.com/shpylka0/final_project.git
+ - `git clone https://github.com/shpylka0/final_project.git`
 2. Встановити необхідні бібліотеки:
- - pip install -r requirements.txt
+ - `pip install -r requirements.txt`
 4. Запустити проєкт:
- - python password_checker.py
+ - `python password_checker.py`
 
 ## Як переглянути історію паролів
 
 
 1. Запустіть файл read_history.py:
- - python read_history.py
+ - `python read_history.py`
