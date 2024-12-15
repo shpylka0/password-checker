@@ -94,7 +94,7 @@ def save_history(password, results):
     except Exception as e:
         print(Fore.YELLOW + "[УВАГА] Не вдалося записати історію перевірки.")
 
-# Основна функція програми
+# main
 def main():
     print(Fore.CYAN + "Перевірка надійності пароля")
     password = input("Введіть пароль для перевірки: ")
