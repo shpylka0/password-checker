@@ -22,12 +22,12 @@
 ## Як запустити проєкт
 
 
-1. Клонувати репозиторій
+1. Клонувати репозиторій:
+ - git clone https://github.com/shpylka0/final_project.git
 2. Встановити необхідні бібліотеки:
  - pip install -r requirements.txt
-3. Створити файл `requirements.txt` у корені проєкту і додати залежності:
- - requests
- - colorama
+4. Запустити проєкт:
+ - python password_checker.py
 
 
 
