@@ -22,7 +22,44 @@ A simple CLI tool for evaluating the strength of passwords based on multiple cri
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/shpylka0/password-checker.git
-cd password-checker
+   ```bash
+   git clone https://github.com/shpylka0/password-checker.git
+   cd password-checker
+   ```
 
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the main checker:
+
+   ```bash
+   python src/password_checker.py
+   ```
+
+4. View password check history:
+
+   ```bash
+   python src/read_history.py
+   ```
+
+## 📂 Project Structure
+
+```
+password-checker/
+├── README.md
+├── requirements.txt
+├── src/
+│   ├── password_checker.py
+│   └── read_history.py
+├── data/
+│   └── password_checks.json  # created automatically
+└── .gitignore
+```
+
+## ⚠️ Notes
+
+- Do not use this tool to store real user passwords — it's for educational purposes only.
+- If the Have I Been Pwned API fails, the tool will still perform local checks.
